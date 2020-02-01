@@ -1,2 +1,2 @@
 # ripemd160
-ripemd160 written in pure swift
+[RIPEMD-160](https://homes.esat.kuleuven.be/~bosselae/ripemd160.html) written in pure swift
