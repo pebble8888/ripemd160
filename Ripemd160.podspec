@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "ripemd160"
-  spec.version      = "1.0.0"
+  spec.version      = "1.1.0"
   spec.summary      = "RIPEMD-160 written in pure swift"
   spec.homepage     = "https://github.com/pebble8888/ripemd160"
   spec.license      = "MIT"
