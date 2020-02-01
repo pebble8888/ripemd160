@@ -8,20 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		A23EB2CB23DBE83E000B028F /* Ripemd160Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23EB2CA23DBE83E000B028F /* Ripemd160Tests.swift */; };
-		A23EB2CD23DBE83E000B028F /* libRipemd160.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A4A64B23D34483001753BD /* libRipemd160.a */; };
 		A23EB2F323DBFEB7000B028F /* rmd160.c in Sources */ = {isa = PBXBuildFile; fileRef = A23EB2E523DBFD99000B028F /* rmd160.c */; };
 		A23EB2F423DBFEC3000B028F /* hashtest.c in Sources */ = {isa = PBXBuildFile; fileRef = A23EB2E123DBFD54000B028F /* hashtest.c */; };
-		A2A4A65823D344D4001753BD /* Ripemd160.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A4A65723D344D4001753BD /* Ripemd160.swift */; };
 		A2D35C8D23E5538200C62E3E /* HexHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D35C8C23E5538200C62E3E /* HexHelper.swift */; };
+		A2D35C9823E5552300C62E3E /* Ripemd160.h in Headers */ = {isa = PBXBuildFile; fileRef = A2D35C9623E5552300C62E3E /* Ripemd160.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2D35C9C23E5556400C62E3E /* Ripemd160.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A4A65723D344D4001753BD /* Ripemd160.swift */; };
+		A2D35CA123E5562800C62E3E /* Ripemd160.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D35C9423E5552300C62E3E /* Ripemd160.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A23EB2CE23DBE83E000B028F /* PBXContainerItemProxy */ = {
+		A2D35C9E23E5561B00C62E3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A2A4A64323D34483001753BD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A2A4A64A23D34483001753BD;
-			remoteInfo = ripemd160;
+			remoteGlobalIDString = A2D35C9323E5552300C62E3E;
+			remoteInfo = Ripemd160;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -45,9 +46,11 @@
 		A23EB2E423DBFD99000B028F /* rmd160.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rmd160.h; sourceTree = "<group>"; };
 		A23EB2E523DBFD99000B028F /* rmd160.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = rmd160.c; sourceTree = "<group>"; };
 		A23EB2EC23DBFE68000B028F /* Ripemd160Ref */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Ripemd160Ref; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2A4A64B23D34483001753BD /* libRipemd160.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRipemd160.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A4A65723D344D4001753BD /* Ripemd160.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ripemd160.swift; sourceTree = "<group>"; };
 		A2D35C8C23E5538200C62E3E /* HexHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexHelper.swift; sourceTree = "<group>"; };
+		A2D35C9423E5552300C62E3E /* Ripemd160.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ripemd160.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2D35C9623E5552300C62E3E /* Ripemd160.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ripemd160.h; sourceTree = "<group>"; };
+		A2D35C9723E5552300C62E3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,18 +58,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A23EB2CD23DBE83E000B028F /* libRipemd160.a in Frameworks */,
+				A2D35CA123E5562800C62E3E /* Ripemd160.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A23EB2E923DBFE68000B028F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A2A4A64923D34483001753BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -102,16 +98,18 @@
 				A2D35C8E23E5544D00C62E3E /* Sources */,
 				A23EB2C923DBE83E000B028F /* Ripemd160Tests */,
 				A23EB2D823DBFD36000B028F /* Ripemd160Ref */,
+				A2D35C9523E5552300C62E3E /* Ripemd160 */,
 				A2A4A64C23D34483001753BD /* Products */,
+				A2D35CA023E5562800C62E3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		A2A4A64C23D34483001753BD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A2A4A64B23D34483001753BD /* libRipemd160.a */,
 				A23EB2C823DBE83E000B028F /* Ripemd160Tests.xctest */,
 				A23EB2EC23DBFE68000B028F /* Ripemd160Ref */,
+				A2D35C9423E5552300C62E3E /* Ripemd160.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,13 +122,30 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		A2D35C9523E5552300C62E3E /* Ripemd160 */ = {
+			isa = PBXGroup;
+			children = (
+				A2D35C9623E5552300C62E3E /* Ripemd160.h */,
+				A2D35C9723E5552300C62E3E /* Info.plist */,
+			);
+			path = Ripemd160;
+			sourceTree = "<group>";
+		};
+		A2D35CA023E5562800C62E3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A2A4A64723D34483001753BD /* Headers */ = {
+		A2D35C8F23E5552300C62E3E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2D35C9823E5552300C62E3E /* Ripemd160.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +163,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A23EB2CF23DBE83E000B028F /* PBXTargetDependency */,
+				A2D35C9F23E5561B00C62E3E /* PBXTargetDependency */,
 			);
 			name = Ripemd160Tests;
 			productName = Ripemd160Tests;
@@ -172,23 +187,22 @@
 			productReference = A23EB2EC23DBFE68000B028F /* Ripemd160Ref */;
 			productType = "com.apple.product-type.tool";
 		};
-		A2A4A64A23D34483001753BD /* Ripemd160 */ = {
+		A2D35C9323E5552300C62E3E /* Ripemd160 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A2A4A65423D34483001753BD /* Build configuration list for PBXNativeTarget "Ripemd160" */;
+			buildConfigurationList = A2D35C9923E5552300C62E3E /* Build configuration list for PBXNativeTarget "Ripemd160" */;
 			buildPhases = (
-				A2A4A64723D34483001753BD /* Headers */,
-				A2A4A64823D34483001753BD /* Sources */,
-				A2A4A64923D34483001753BD /* Frameworks */,
-				A2BE61F223D3ECCC00D1E24D /* SwiftLint */,
+				A2D35C8F23E5552300C62E3E /* Headers */,
+				A2D35C9023E5552300C62E3E /* Sources */,
+				A2D35C9D23E555DC00C62E3E /* SwiftLint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Ripemd160;
-			productName = ripemd160;
-			productReference = A2A4A64B23D34483001753BD /* libRipemd160.a */;
-			productType = "com.apple.product-type.library.static";
+			productName = Ripemd160;
+			productReference = A2D35C9423E5552300C62E3E /* Ripemd160.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -206,9 +220,8 @@
 					A23EB2EB23DBFE68000B028F = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
-					A2A4A64A23D34483001753BD = {
+					A2D35C9323E5552300C62E3E = {
 						CreatedOnToolsVersion = 11.3.1;
-						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -225,9 +238,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A2A4A64A23D34483001753BD /* Ripemd160 */,
 				A23EB2C723DBE83E000B028F /* Ripemd160Tests */,
 				A23EB2EB23DBFE68000B028F /* Ripemd160Ref */,
+				A2D35C9323E5552300C62E3E /* Ripemd160 */,
 			);
 		};
 /* End PBXProject section */
@@ -243,7 +256,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A2BE61F223D3ECCC00D1E24D /* SwiftLint */ = {
+		A2D35C9D23E555DC00C62E3E /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,7 +272,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint autocorrect --format\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -282,21 +295,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2A4A64823D34483001753BD /* Sources */ = {
+		A2D35C9023E5552300C62E3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2A4A65823D344D4001753BD /* Ripemd160.swift in Sources */,
+				A2D35C9C23E5556400C62E3E /* Ripemd160.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A23EB2CF23DBE83E000B028F /* PBXTargetDependency */ = {
+		A2D35C9F23E5561B00C62E3E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A2A4A64A23D34483001753BD /* Ripemd160 */;
-			targetProxy = A23EB2CE23DBE83E000B028F /* PBXContainerItemProxy */;
+			target = A2D35C9323E5552300C62E3E /* Ripemd160 */;
+			targetProxy = A2D35C9E23E5561B00C62E3E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -464,38 +477,59 @@
 			};
 			name = Release;
 		};
-		A2A4A65523D34483001753BD /* Debug */ = {
+		A2D35C9A23E5552300C62E3E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				EXECUTABLE_PREFIX = lib;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Ripemd160/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pebble8888.Ripemd160;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		A2A4A65623D34483001753BD /* Release */ = {
+		A2D35C9B23E5552300C62E3E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				EXECUTABLE_PREFIX = lib;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Ripemd160/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pebble8888.Ripemd160;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -529,11 +563,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A2A4A65423D34483001753BD /* Build configuration list for PBXNativeTarget "Ripemd160" */ = {
+		A2D35C9923E5552300C62E3E /* Build configuration list for PBXNativeTarget "Ripemd160" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A2A4A65523D34483001753BD /* Debug */,
-				A2A4A65623D34483001753BD /* Release */,
+				A2D35C9A23E5552300C62E3E /* Debug */,
+				A2D35C9B23E5552300C62E3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

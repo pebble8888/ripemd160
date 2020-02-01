@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A2A4A64A23D34483001753BD"
-               BuildableName = "libRipemd160.a"
+               BlueprintIdentifier = "A2D35C9323E5552300C62E3E"
+               BuildableName = "Ripemd160.framework"
                BlueprintName = "Ripemd160"
                ReferencedContainer = "container:Ripemd160.xcodeproj">
             </BuildableReference>
@@ -60,8 +60,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A2A4A64A23D34483001753BD"
-            BuildableName = "libRipemd160.a"
+            BlueprintIdentifier = "A2D35C9323E5552300C62E3E"
+            BuildableName = "Ripemd160.framework"
             BlueprintName = "Ripemd160"
             ReferencedContainer = "container:Ripemd160.xcodeproj">
          </BuildableReference>
