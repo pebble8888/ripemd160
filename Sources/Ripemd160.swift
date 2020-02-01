@@ -125,7 +125,7 @@ open class Ripemd160 {
         self.setInitialValue()
     }
 
-    public func compress(_ x: inout [UInt32]) {
+    public func compress(_ x: [UInt32]) {
         precondition(x.count == 16)
 
         var aa: UInt32 = mdbuf[0]
@@ -342,14 +342,14 @@ open class Ripemd160 {
         x[Int((datalen>>2) & 15)] ^= (1 << (8 * (datalen&3) + 7))
 
         if (datalen & 63) > 55 {
-            compress(&x)
+            compress(x)
             for i in 0 ..< 16 {
                 x[i] = 0
             }
         }
         x[14] = datalen << 3
         x[15] = (datalen >> 29) | (mswlen << 3)
-        compress(&x)
+        compress(x)
 
         var hashcode: [UInt8] = [UInt8](repeating: 0, count: 20)
         for i in stride(from: 0, to: 20, by: 4) {
@@ -384,7 +384,7 @@ open class Ripemd160 {
                 x[i] = fourBytesToLEUInt32(slice)
                 index = index.advanced(by: 4)
             }
-            md.compress(&x)
+            md.compress(x)
             remain -= 64
         }
         return md.finish(Array(data[index..<data.endIndex]), length)

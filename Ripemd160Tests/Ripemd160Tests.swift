@@ -67,9 +67,9 @@ class Ripemd160Tests: XCTestCase {
 
     func testHash9() {
         let md = Ripemd160()
-        var x: [UInt32] = [UInt32](repeating: 0x61616161, count: 16)
+        let x: [UInt32] = [UInt32](repeating: 0x61616161, count: 16)
         for _ in 0..<1000000/64 {
-            md.compress(&x)
+            md.compress(x)
         }
         let result = md.finish([], 1000000)
         XCTAssertEqual(result.hexDescription(), "52783243c1697bdbe16d37f97f68f08325dc1528")
