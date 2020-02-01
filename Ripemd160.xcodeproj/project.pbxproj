@@ -12,6 +12,7 @@
 		A23EB2F323DBFEB7000B028F /* rmd160.c in Sources */ = {isa = PBXBuildFile; fileRef = A23EB2E523DBFD99000B028F /* rmd160.c */; };
 		A23EB2F423DBFEC3000B028F /* hashtest.c in Sources */ = {isa = PBXBuildFile; fileRef = A23EB2E123DBFD54000B028F /* hashtest.c */; };
 		A2A4A65823D344D4001753BD /* Ripemd160.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A4A65723D344D4001753BD /* Ripemd160.swift */; };
+		A2D35C8D23E5538200C62E3E /* HexHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D35C8C23E5538200C62E3E /* HexHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		A23EB2EC23DBFE68000B028F /* Ripemd160Ref */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Ripemd160Ref; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A4A64B23D34483001753BD /* libRipemd160.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRipemd160.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A4A65723D344D4001753BD /* Ripemd160.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ripemd160.swift; sourceTree = "<group>"; };
+		A2D35C8C23E5538200C62E3E /* HexHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				A23EB2CA23DBE83E000B028F /* Ripemd160Tests.swift */,
 				A23EB2CC23DBE83E000B028F /* Info.plist */,
+				A2D35C8C23E5538200C62E3E /* HexHelper.swift */,
 			);
 			path = Ripemd160Tests;
 			sourceTree = "<group>";
@@ -96,7 +99,7 @@
 		A2A4A64223D34483001753BD = {
 			isa = PBXGroup;
 			children = (
-				A2A4A64D23D34483001753BD /* ripemd160 */,
+				A2D35C8E23E5544D00C62E3E /* Sources */,
 				A23EB2C923DBE83E000B028F /* Ripemd160Tests */,
 				A23EB2D823DBFD36000B028F /* Ripemd160Ref */,
 				A2A4A64C23D34483001753BD /* Products */,
@@ -113,12 +116,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A2A4A64D23D34483001753BD /* ripemd160 */ = {
+		A2D35C8E23E5544D00C62E3E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				A2A4A65723D344D4001753BD /* Ripemd160.swift */,
 			);
-			path = ripemd160;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A23EB2CB23DBE83E000B028F /* Ripemd160Tests.swift in Sources */,
+				A2D35C8D23E5538200C62E3E /* HexHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

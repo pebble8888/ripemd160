@@ -17,12 +17,6 @@ class Ripemd160Tests: XCTestCase {
     override func tearDown() {
     }
 
-    func testLE() {
-        let data: [UInt8] = [0x01, 0x02, 0x03, 0x04]
-        let result = Ripemd160.fourBytesToLEUInt32(data[data.startIndex..<data.endIndex])
-        XCTAssertEqual(result.littleEndianHexDescription(), "01020304")
-    }
-
     func testHash1() {
         let result = Ripemd160.digest([])
         XCTAssertEqual(result.hexDescription(), "9c1185a5c5e9fc54612808977ee8f548b2258d31")

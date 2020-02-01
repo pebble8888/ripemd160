@@ -1,13 +1,30 @@
 //
 //  Ripemd160.swift
 //
-//  Copyright © 2020 pebble8888. All rights reserved.
+//  Copyright 2020 pebble8888.
 //
-// https://homes.esat.kuleuven.be/~bosselae/ripemd160.html
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
 //
 
 import Foundation
 
+/// https://homes.esat.kuleuven.be/~bosselae/ripemd160.html
 open class Ripemd160 {
     private var mdbuf = [UInt32](repeating: 0, count: 5)
 
@@ -345,7 +362,7 @@ open class Ripemd160 {
         return hashcode
     }
 
-    public static func fourBytesToLEUInt32(_ data: Slice<[UInt8]>) -> UInt32 {
+    static func fourBytesToLEUInt32(_ data: Slice<[UInt8]>) -> UInt32 {
         var val: UInt32 = 0
         val += UInt32(data[data.startIndex])
         val += UInt32(data[data.startIndex + 1]) << 8
@@ -371,27 +388,5 @@ open class Ripemd160 {
             remain -= 64
         }
         return md.finish(Array(data[index..<data.endIndex]), length)
-    }
-}
-
-extension UInt32 {
-    public func littleEndianHexDescription() -> String {
-        return String(format: "%02x%02x%02x%02x",
-                      self & 0xff,
-                      (self >> 8) & 0xff,
-                      (self >> 16) & 0xff,
-                      (self >> 24) & 0xff)
-    }
-}
-
-extension Collection where Iterator.Element == UInt32 {
-    public func littleEndianHexDescription() -> String {
-        return self.map({ $0.littleEndianHexDescription() }).joined()
-    }
-}
-
-extension Collection where Iterator.Element == UInt8 {
-    public func hexDescription() -> String {
-        return self.map({ String(format: "%02x", $0) }).joined()
     }
 }
