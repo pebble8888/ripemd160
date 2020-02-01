@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A23EB2CB23DBE83E000B028F /* Ripemd160Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23EB2CA23DBE83E000B028F /* Ripemd160Tests.swift */; };
+		A23EB2CD23DBE83E000B028F /* libRipemd160.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A4A64B23D34483001753BD /* libRipemd160.a */; };
+		A23EB2F323DBFEB7000B028F /* rmd160.c in Sources */ = {isa = PBXBuildFile; fileRef = A23EB2E523DBFD99000B028F /* rmd160.c */; };
+		A23EB2F423DBFEC3000B028F /* hashtest.c in Sources */ = {isa = PBXBuildFile; fileRef = A23EB2E123DBFD54000B028F /* hashtest.c */; };
+		A2A4A65823D344D4001753BD /* Ripemd160.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A4A65723D344D4001753BD /* Ripemd160.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A23EB2CE23DBE83E000B028F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2A4A64323D34483001753BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2A4A64A23D34483001753BD;
+			remoteInfo = ripemd160;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A23EB2EA23DBFE68000B028F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A23EB2C823DBE83E000B028F /* Ripemd160Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ripemd160Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23EB2CA23DBE83E000B028F /* Ripemd160Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ripemd160Tests.swift; sourceTree = "<group>"; };
+		A23EB2CC23DBE83E000B028F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A23EB2E123DBFD54000B028F /* hashtest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hashtest.c; sourceTree = "<group>"; };
+		A23EB2E423DBFD99000B028F /* rmd160.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rmd160.h; sourceTree = "<group>"; };
+		A23EB2E523DBFD99000B028F /* rmd160.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = rmd160.c; sourceTree = "<group>"; };
+		A23EB2EC23DBFE68000B028F /* Ripemd160Ref */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Ripemd160Ref; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2A4A64B23D34483001753BD /* libRipemd160.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRipemd160.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2A4A65723D344D4001753BD /* Ripemd160.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ripemd160.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A23EB2C523DBE83E000B028F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23EB2CD23DBE83E000B028F /* libRipemd160.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23EB2E923DBFE68000B028F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2A4A64923D34483001753BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A23EB2C923DBE83E000B028F /* Ripemd160Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A23EB2CA23DBE83E000B028F /* Ripemd160Tests.swift */,
+				A23EB2CC23DBE83E000B028F /* Info.plist */,
+			);
+			path = Ripemd160Tests;
+			sourceTree = "<group>";
+		};
+		A23EB2D823DBFD36000B028F /* Ripemd160Ref */ = {
+			isa = PBXGroup;
+			children = (
+				A23EB2E123DBFD54000B028F /* hashtest.c */,
+				A23EB2E423DBFD99000B028F /* rmd160.h */,
+				A23EB2E523DBFD99000B028F /* rmd160.c */,
+			);
+			path = Ripemd160Ref;
+			sourceTree = "<group>";
+		};
+		A2A4A64223D34483001753BD = {
+			isa = PBXGroup;
+			children = (
+				A2A4A64D23D34483001753BD /* ripemd160 */,
+				A23EB2C923DBE83E000B028F /* Ripemd160Tests */,
+				A23EB2D823DBFD36000B028F /* Ripemd160Ref */,
+				A2A4A64C23D34483001753BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A2A4A64C23D34483001753BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2A4A64B23D34483001753BD /* libRipemd160.a */,
+				A23EB2C823DBE83E000B028F /* Ripemd160Tests.xctest */,
+				A23EB2EC23DBFE68000B028F /* Ripemd160Ref */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2A4A64D23D34483001753BD /* ripemd160 */ = {
+			isa = PBXGroup;
+			children = (
+				A2A4A65723D344D4001753BD /* Ripemd160.swift */,
+			);
+			path = ripemd160;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A2A4A64723D34483001753BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A23EB2C723DBE83E000B028F /* Ripemd160Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A23EB2D223DBE83E000B028F /* Build configuration list for PBXNativeTarget "Ripemd160Tests" */;
+			buildPhases = (
+				A23EB2C423DBE83E000B028F /* Sources */,
+				A23EB2C523DBE83E000B028F /* Frameworks */,
+				A23EB2C623DBE83E000B028F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A23EB2CF23DBE83E000B028F /* PBXTargetDependency */,
+			);
+			name = Ripemd160Tests;
+			productName = Ripemd160Tests;
+			productReference = A23EB2C823DBE83E000B028F /* Ripemd160Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A23EB2EB23DBFE68000B028F /* Ripemd160Ref */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A23EB2F023DBFE68000B028F /* Build configuration list for PBXNativeTarget "Ripemd160Ref" */;
+			buildPhases = (
+				A23EB2E823DBFE68000B028F /* Sources */,
+				A23EB2E923DBFE68000B028F /* Frameworks */,
+				A23EB2EA23DBFE68000B028F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ripemd160Ref;
+			productName = Ripemd160Ref;
+			productReference = A23EB2EC23DBFE68000B028F /* Ripemd160Ref */;
+			productType = "com.apple.product-type.tool";
+		};
+		A2A4A64A23D34483001753BD /* Ripemd160 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2A4A65423D34483001753BD /* Build configuration list for PBXNativeTarget "Ripemd160" */;
+			buildPhases = (
+				A2A4A64723D34483001753BD /* Headers */,
+				A2A4A64823D34483001753BD /* Sources */,
+				A2A4A64923D34483001753BD /* Frameworks */,
+				A2BE61F223D3ECCC00D1E24D /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ripemd160;
+			productName = ripemd160;
+			productReference = A2A4A64B23D34483001753BD /* libRipemd160.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2A4A64323D34483001753BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = pebble8888;
+				TargetAttributes = {
+					A23EB2C723DBE83E000B028F = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					A23EB2EB23DBFE68000B028F = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					A2A4A64A23D34483001753BD = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+				};
+			};
+			buildConfigurationList = A2A4A64623D34483001753BD /* Build configuration list for PBXProject "Ripemd160" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2A4A64223D34483001753BD;
+			productRefGroup = A2A4A64C23D34483001753BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2A4A64A23D34483001753BD /* Ripemd160 */,
+				A23EB2C723DBE83E000B028F /* Ripemd160Tests */,
+				A23EB2EB23DBFE68000B028F /* Ripemd160Ref */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A23EB2C623DBE83E000B028F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A2BE61F223D3ECCC00D1E24D /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint autocorrect --format\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A23EB2C423DBE83E000B028F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23EB2CB23DBE83E000B028F /* Ripemd160Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23EB2E823DBFE68000B028F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A23EB2F423DBFEC3000B028F /* hashtest.c in Sources */,
+				A23EB2F323DBFEB7000B028F /* rmd160.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2A4A64823D34483001753BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2A4A65823D344D4001753BD /* Ripemd160.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A23EB2CF23DBE83E000B028F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2A4A64A23D34483001753BD /* Ripemd160 */;
+			targetProxy = A23EB2CE23DBE83E000B028F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A23EB2D023DBE83E000B028F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Ripemd160Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pebble8888.Ripemd160Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A23EB2D123DBE83E000B028F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Ripemd160Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pebble8888.Ripemd160Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A23EB2F123DBFE68000B028F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A23EB2F223DBFE68000B028F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A2A4A65223D34483001753BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A2A4A65323D34483001753BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A2A4A65523D34483001753BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A2A4A65623D34483001753BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				EXECUTABLE_PREFIX = lib;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A23EB2D223DBE83E000B028F /* Build configuration list for PBXNativeTarget "Ripemd160Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A23EB2D023DBE83E000B028F /* Debug */,
+				A23EB2D123DBE83E000B028F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A23EB2F023DBFE68000B028F /* Build configuration list for PBXNativeTarget "Ripemd160Ref" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A23EB2F123DBFE68000B028F /* Debug */,
+				A23EB2F223DBFE68000B028F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2A4A64623D34483001753BD /* Build configuration list for PBXProject "Ripemd160" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2A4A65223D34483001753BD /* Debug */,
+				A2A4A65323D34483001753BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2A4A65423D34483001753BD /* Build configuration list for PBXNativeTarget "Ripemd160" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2A4A65523D34483001753BD /* Debug */,
+				A2A4A65623D34483001753BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2A4A64323D34483001753BD /* Project object */;
+}
