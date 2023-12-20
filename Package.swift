@@ -1,11 +1,8 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.9
 import PackageDescription
 
 let package = Package(
     name: "Ripemd160",
-    platforms: [
-        .macOS(.v10_15), .iOS(.v13), .watchOS(.v6), .tvOS(.v13)
-    ],
     products: [
         .library(
             name: "Ripemd160",
