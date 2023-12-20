@@ -6,15 +6,15 @@ let package = Package(
     products: [
         .library(
             name: "ripemd160",
-            targets: ["Ripemd160"])
+            targets: ["ripemd160"])
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "Ripemd160",
+            name: "ripemd160",
             path: "Sources"),
         .testTarget(
             name: "Ripemd160Tests",
-            dependencies: ["Ripemd160"], path: "Ripemd160Tests")
+            dependencies: ["ripemd160"], path: "Ripemd160Tests")
     ]
 )

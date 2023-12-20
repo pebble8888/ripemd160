@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import Ripemd160
+import ripemd160
 
 class Ripemd160Tests: XCTestCase {
 
