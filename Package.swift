@@ -2,10 +2,10 @@
 import PackageDescription
 
 let package = Package(
-    name: "Ripemd160",
+    name: "ripemd160",
     products: [
         .library(
-            name: "Ripemd160",
+            name: "ripemd160",
             targets: ["Ripemd160"])
     ],
     dependencies: [],
