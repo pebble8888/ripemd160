@@ -362,7 +362,7 @@ open class Ripemd160 {
         return hashcode
     }
 
-    static func fourBytesToLEUInt32(_ data: Slice<[UInt8]>) -> UInt32 {
+    static func fourBytesToLEUInt32(_ data: [UInt8]) -> UInt32 {
         var val: UInt32 = 0
         val += UInt32(data[data.startIndex])
         val += UInt32(data[data.startIndex + 1]) << 8
@@ -380,8 +380,8 @@ open class Ripemd160 {
         var index = data.startIndex
         while remain > 63 {
             for i in 0..<16 {
-                let slice: Slice<[UInt8]> = data[index..<index.advanced(by: 4)]
-                x[i] = fourBytesToLEUInt32(slice)
+                let slice = data[index..<index.advanced(by: 4)]
+                x[i] = fourBytesToLEUInt32(Array(slice))
                 index = index.advanced(by: 4)
             }
             md.compress(x)
